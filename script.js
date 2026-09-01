@@ -1,97 +1,54 @@
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
-
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", () => {
-
-    navLinks.classList.toggle("open");
-
-});
-
-
-/* =========================================
-   CLOSE MOBILE MENU AFTER CLICK
-========================================= */
-
-const navItems = document.querySelectorAll(
-    ".nav-links a"
-);
-
-navItems.forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-        navLinks.classList.remove("open");
-
+if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
     });
 
-});
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+}
 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", e => {
+        const target = document.querySelector(link.getAttribute("href"));
 
-/* =========================================
-   SCROLL REVEAL ANIMATION
-========================================= */
-
-const revealElements =
-    document.querySelectorAll(".reveal");
-
-
-const revealObserver =
-    new IntersectionObserver(
-        (entries) => {
-
-            entries.forEach((entry) => {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("show");
-
-                    revealObserver.unobserve(
-                        entry.target
-                    );
-
-                }
-
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
             });
-
-        },
-        {
-            threshold: 0.12
         }
-    );
-
-
-revealElements.forEach((element) => {
-
-    revealObserver.observe(element);
-
+    });
 });
 
+const reveals = document.querySelectorAll(".reveal");
 
-/* =========================================
-   CURRENT YEAR
-========================================= */
-
-const yearElement =
-    document.getElementById("year");
-
-yearElement.textContent =
-    new Date().getFullYear();
-
-
-/* =========================================
-   OPTIONAL: ESCAPE KEY CLOSES MENU
-========================================= */
-
-document.addEventListener("keydown", (event) => {
-
-    if (event.key === "Escape") {
-
-        navLinks.classList.remove("open");
-
+const revealObserver = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.12
     }
+);
 
+reveals.forEach(element => {
+    revealObserver.observe(element);
 });
+
+const year = document.getElementById("year");
+
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
