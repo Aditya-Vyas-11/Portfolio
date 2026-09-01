@@ -1,153 +1,83 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aditya Vyas — Web Developer portfolio featuring Pizza Fire, a deployed full-stack ordering platform.">
-  <title>Aditya Vyas — Web Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Aditya Vyas — Web Developer portfolio.">
+<title>Aditya Vyas — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
+<header>
   <div class="wrap nav">
     <a class="brand" href="#home">ADITYA<span>.</span></a>
-    <nav id="nav">
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    <nav id="nav"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#contact">Let's talk ↗</a>
     <button class="menu" id="menu" aria-label="Open menu">☰</button>
   </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow"><i></i> WEB DEVELOPER · INDIA</div>
-      <h1>I build <span>real web apps</span><br>that actually work.</h1>
-      <p>I’m Aditya Vyas. I build responsive full-stack applications with JavaScript, Python, FastAPI and databases — from the interface users touch to the APIs behind it.</p>
-      <div class="actions">
-    <a class="btn primary" href="#work">See my work <b>↗</b></a>
-    <a class="btn ghost" href="#contact">Get in touch</a>
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow"><i></i> WEB DEVELOPER · INDIA</div>
+   <h1>I build <span>digital products</span><br>that solve real problems.</h1>
+   <p>I’m Aditya Vyas, a web developer focused on building clean interfaces, functional web applications and practical full-stack solutions.</p>
+   <div class="actions"><a class="btn primary" href="#work">View my work ↗</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+   <div class="proof"><span>●</span> Web Development · Full-Stack · Remote from India</div>
   </div>
-  <div class="proof"><span>●</span> Available for web projects <em>·</em> Remote from India</div>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
-      <div class="core">PF</div>
-      <div class="float f1">Full-Stack</div>
-      <div class="float f2">FastAPI · REST API</div>
-      <div class="float f3">Responsive · Live</div>
-    </div>
+  <div class="hero-art" aria-hidden="true">
+   <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+   <div class="core">&lt;/&gt;</div>
+   <div class="float f1">Web Development</div><div class="float f2">Frontend + Backend</div><div class="float f3">Build · Test · Deploy</div>
   </div>
+ </div>
 </section>
 
-<section class="metrics">
-  <div class="wrap metric-grid">
-    <div><strong>01</strong><span>Featured full-stack build</span></div>
-    <div><strong>03</strong><span>Customer · Admin · Delivery</span></div>
-    <div><strong>REST</strong><span>API + database integration</span></div>
-    <div><strong>LIVE</strong><span>Deployed application</span></div>
-  </div>
-</section>
+<section class="metrics"><div class="wrap metric-grid">
+ <div><strong>WEB</strong><span>Interfaces & applications</span></div>
+ <div><strong>FULL-STACK</strong><span>Frontend + backend integration</span></div>
+ <div><strong>API</strong><span>Real application workflows</span></div>
+ <div><strong>LIVE</strong><span>Projects deployed online</span></div>
+</div></section>
 
-<section class="section" id="work">
-  <div class="wrap">
-    <div class="heading">
-      <div class="eyebrow">FEATURED WORK</div>
-      <h2>Pizza Fire</h2>
-      <p>A complete pizza ordering platform built as a working full-stack application — not a static mockup.</p>
-    </div>
+<section class="section" id="work"><div class="wrap">
+ <div class="heading"><div class="eyebrow">SELECTED WORK</div><h2>Projects I’ve built.</h2><p>A growing collection of practical projects. Each project is rendered from one simple list in <code>script.js</code>, so adding the next one takes only a few lines.</p></div>
+ <div id="projects" class="projects"></div>
+</div></section>
 
-    <article class="project">
-      <div class="project-visual">
-        <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>pizza-fire-frontend.onrender.com</span></div>
-          <div class="mock-nav"><b>🍕 PIZZA FIRE</b><span>MENU</span><span>MY ORDERS</span><button>LOGIN</button></div>
-          <div class="mock-body">
-            <div class="mock-title">Hot pizza.<br><span>Fast ordering.</span></div>
-            <div class="pizza">🍕</div>
-            <div class="mock-cards"><div>Customer<br><b>Orders</b></div><div>Admin<br><b>Manage</b></div><div>Delivery<br><b>Complete</b></div></div>
-          </div>
-        </div>
-      </div>
+<section class="section muted" id="skills"><div class="wrap">
+ <div class="heading"><div class="eyebrow">SKILLS</div><h2>Tools I work with.</h2></div>
+ <div class="skill-grid">
+  <div><strong>Frontend</strong><span>HTML · CSS · JavaScript · Responsive UI</span></div>
+  <div><strong>Backend</strong><span>Python · FastAPI · REST APIs</span></div>
+  <div><strong>Data</strong><span>SQLite · CRUD · API integration</span></div>
+  <div><strong>Workflow</strong><span>Git · GitHub · Deployment</span></div>
+ </div>
+</div></section>
 
-      <div class="project-info">
-        <span class="project-label">FULL-STACK WEB APPLICATION</span>
-        <h3>Pizza Fire <small>01</small></h3>
-        <p>Customers can create accounts, log in, order pizzas, view My Orders and track orders. Separate admin and delivery workflows handle the operational side of the application.</p>
+<section class="section" id="about"><div class="wrap about">
+ <div class="heading"><div class="eyebrow">ABOUT</div><h2>Developer first. Project second.</h2></div>
+ <div class="about-copy">
+  <p>I’m <b>Aditya Vyas</b>, a web developer who learns by building and cares about understanding how a product works from end to end.</p>
+  <p>My work can range from frontend interfaces to full-stack applications with APIs, databases and deployment. I’m continuously expanding the kinds of problems I can solve.</p>
+  <p>This portfolio is intentionally broader than any single project — the projects are proof of what I can build, not my identity.</p>
+ </div>
+</div></section>
 
-        <div class="features">
-          <div><b>Customer flow</b><span>Signup · Login · Cart · Checkout · My Orders · Tracking</span></div>
-          <div><b>Admin flow</b><span>Dashboard · Order management · Status updates</span></div>
-          <div><b>Delivery flow</b><span>Assigned orders · Order completion</span></div>
-          <div><b>Backend</b><span>Python · FastAPI · REST APIs · SQLite</span></div>
-        </div>
-
-        <div class="chips">
-          <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Python</span><span>FastAPI</span><span>SQLite</span><span>GitHub</span><span>Render</span><span>Responsive</span>
-        </div>
-
-        <div class="project-links">
-          <a class="live" target="_blank" rel="noopener" href="https://pizza-fire-frontend.onrender.com">Live Demo ↗</a>
-          <a target="_blank" rel="noopener" href="https://github.com/Aditya-Vyas-11/Pizza-fire">View GitHub →</a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="section muted" id="skills">
-  <div class="wrap">
-    <div class="heading">
-      <div class="eyebrow">SKILLS</div>
-      <h2>What I work with.</h2>
-    </div>
-    <div class="skill-grid">
-      <div><strong>Frontend</strong><span>HTML · CSS · JavaScript · Responsive UI</span></div>
-      <div><strong>Backend</strong><span>Python · FastAPI · REST APIs</span></div>
-      <div><strong>Data</strong><span>SQLite · CRUD · API integration</span></div>
-      <div><strong>Deployment</strong><span>Git · GitHub · Render</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap about">
-    <div class="heading">
-      <div class="eyebrow">ABOUT</div>
-      <h2>Learning by building.</h2>
-    </div>
-    <div class="about-copy">
-      <p>I’m <b>Aditya Vyas</b>, a web developer focused on building practical software and understanding how the pieces fit together.</p>
-      <p>I’m especially interested in full-stack work where the frontend communicates with a real backend, data is persisted, and different users get different workflows.</p>
-      <p>Pizza Fire represents that approach: authentication, ordering, tracking, admin operations, delivery operations, API integration and live deployment in one project.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section contact-section" id="contact">
-  <div class="wrap contact">
-    <div>
-      <div class="eyebrow">CONTACT</div>
-      <h2>Have something to build?</h2>
-      <p>Tell me what you’re trying to make. We’ll start with the actual requirement.</p>
-    </div>
-    <div class="contact-card">
-      <div><small>EMAIL</small><a href="mailto:vyas.aditya2006@gmail.com">vyas.aditya2006@gmail.com</a></div>
-      <div><small>GITHUB</small><a target="_blank" rel="noopener" href="https://github.com/Aditya-Vyas-11">github.com/Aditya-Vyas-11 ↗</a></div>
-      <a class="btn primary" href="mailto:vyas.aditya2006@gmail.com">Email me ↗</a>
-    </div>
-  </div>
-</section>
+<section class="section contact-section" id="contact"><div class="wrap contact">
+ <div><div class="eyebrow">CONTACT</div><h2>Have something to build?</h2><p>Tell me what you’re trying to make. We’ll start with the actual requirement.</p></div>
+ <div class="contact-card">
+  <div><small>EMAIL</small><a href="mailto:vyas.aditya2006@gmail.com">vyas.aditya2006@gmail.com</a></div>
+  <div><small>GITHUB</small><a target="_blank" rel="noopener" href="https://github.com/Aditya-Vyas-11">github.com/Aditya-Vyas-11 ↗</a></div>
+  <a class="btn primary" href="mailto:vyas.aditya2006@gmail.com">Email me ↗</a>
+ </div>
+</div></section>
 </main>
-
 <footer><div class="wrap"><span>© <span id="year"></span> Aditya Vyas.</span><span>Web Developer · Built with code.</span></div></footer>
 <script src="script.js"></script>
 </body>
