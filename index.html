@@ -1,1375 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aditya Vyas — Web Developer building full-stack web applications, responsive interfaces and practical digital products.">
+    <title>Aditya Vyas — Web Developer</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Aditya Vyas — Web Developer building clean, responsive and functional digital experiences."
-    >
-
-    <title>
-        Aditya Vyas — Web Developer
-    </title>
-
-
-    <!-- ================= GOOGLE FONTS ================= -->
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-
-    <!-- ================= CSS ================= -->
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-
-
-    <!-- ==================================================
-         NAVBAR
-    ================================================== -->
-
     <nav class="navbar">
+        <a href="#home" class="logo">ADITYA<span>.</span></a>
 
-
-        <a
-            href="#home"
-            class="logo"
-        >
-            ADITYA<span>.</span>
-        </a>
-
-
-        <div
-            class="nav-links"
-            id="navLinks"
-        >
-
-            <a href="#work">
-                Work
-            </a>
-
-            <a href="#skills">
-                Skills
-            </a>
-
-            <a href="#process">
-                Process
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
+        <div class="nav-links" id="navLinks">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#process">Process</a>
+            <a href="#about">About</a>
         </div>
 
+        <a href="#contact" class="nav-cta">Let's talk</a>
 
-        <a
-            href="#contact"
-            class="nav-cta"
-        >
-            Let's talk
-        </a>
-
-
-        <button
-            class="menu-btn"
-            id="menuBtn"
-            aria-label="Open navigation"
-        >
-            ☰
-        </button>
-
-
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
     </nav>
 
-
-
-    <!-- ==================================================
-         MAIN
-    ================================================== -->
-
     <main>
-
-
-        <!-- ==================================================
-             HERO
-        ================================================== -->
-
-        <section
-            class="hero"
-            id="home"
-        >
-
+        <section class="hero" id="home">
             <div class="container hero-grid">
-
-
-                <!-- HERO CONTENT -->
-
                 <div class="hero-content reveal">
-
-
                     <div class="availability">
-
                         <span class="status-dot"></span>
-
                         Web Developer · India
-
                     </div>
-
 
                     <h1>
-
                         Hi, I'm
-
-                        <span class="gradient-text">
-                            Aditya Vyas.
-                        </span>
-
+                        <span class="gradient-text">Aditya Vyas.</span>
                         <br>
-
-                        I build for the web.
-
+                        I build full-stack web apps.
                     </h1>
 
-
                     <p>
-
-                        I create clean, responsive and functional
-                        websites and software solutions with a focus
-                        on solid code and practical user experiences.
-
+                        I build responsive, functional web applications with real
+                        frontend-backend integration — from the interface users see
+                        to the APIs and database behind it.
                     </p>
-
 
                     <div class="hero-buttons">
-
-
-                        <a
-                            href="#work"
-                            class="btn btn-primary"
-                        >
-                            View my work ↗
-                        </a>
-
-
-                        <a
-                            href="#contact"
-                            class="btn btn-secondary"
-                        >
-                            Get in touch
-                        </a>
-
-
+                        <a href="#work" class="btn btn-primary">View my work ↗</a>
+                        <a href="#contact" class="btn btn-secondary">Get in touch</a>
                     </div>
-
-
                 </div>
-
-
-
-                <!-- HERO VISUAL -->
 
                 <div class="hero-visual reveal">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="glowing-orb"></div>
 
-
-                    <div
-                        class="orbit orbit-one"
-                    ></div>
-
-
-                    <div
-                        class="orbit orbit-two"
-                    ></div>
-
-
-                    <div
-                        class="glowing-orb"
-                    ></div>
-
-
-                    <div
-                        class="floating-tag tag-one"
-                    >
-                        Web Development
-                    </div>
-
-
-                    <div
-                        class="floating-tag tag-two"
-                    >
-                        Python · C# · Java
-                    </div>
-
-
-                    <div
-                        class="floating-tag tag-three"
-                    >
-                        HTML · CSS
-                    </div>
-
-
+                    <div class="floating-tag tag-one">Full-Stack Development</div>
+                    <div class="floating-tag tag-two">Python · FastAPI · JavaScript</div>
+                    <div class="floating-tag tag-three">SQLite · REST API · Render</div>
                 </div>
-
-
             </div>
-
         </section>
-
-
-
-        <!-- ==================================================
-             STATS
-        ================================================== -->
 
         <section class="stats-section">
-
             <div class="container stats-grid">
-
-
                 <div class="stat">
-
-                    <strong>
-                        Web
-                    </strong>
-
-                    <span>
-                        Responsive experiences
-                    </span>
-
+                    <strong>Full-Stack</strong>
+                    <span>Frontend + backend</span>
                 </div>
-
-
                 <div class="stat">
-
-                    <strong>
-                        Code
-                    </strong>
-
-                    <span>
-                        Clean & maintainable
-                    </span>
-
+                    <strong>REST API</strong>
+                    <span>Real application integration</span>
                 </div>
-
-
                 <div class="stat">
-
-                    <strong>
-                        UI
-                    </strong>
-
-                    <span>
-                        Simple & modern
-                    </span>
-
+                    <strong>3 Roles</strong>
+                    <span>Customer · Admin · Delivery</span>
                 </div>
-
-
                 <div class="stat">
-
-                    <strong>
-                        Build
-                    </strong>
-
-                    <span>
-                        Idea to working product
-                    </span>
-
+                    <strong>Live</strong>
+                    <span>Deployed on Render</span>
                 </div>
-
-
             </div>
-
         </section>
-
-
-
-        <!-- ==================================================
-             SERVICES
-        ================================================== -->
 
         <section class="section">
-
             <div class="container">
-
-
                 <div class="section-heading reveal">
-
-                    <div class="eyebrow">
-                        What I build
-                    </div>
-
-
-                    <h2>
-                        Digital work that
-                        actually works.
-                    </h2>
-
-
+                    <div class="eyebrow">What I build</div>
+                    <h2>Software that does more than look good.</h2>
                     <p>
-
-                        From websites to software projects,
-                        I focus on building things that are useful,
-                        responsive and easy to understand.
-
+                        My focus is practical development: responsive interfaces,
+                        working APIs, application logic and features that connect
+                        together into a usable product.
                     </p>
-
                 </div>
-
-
 
                 <div class="services-grid">
-
-
-                    <!-- SERVICE 1 -->
-
                     <article class="service-card reveal">
-
-                        <div class="service-icon">
-                            ◫
-                        </div>
-
-
-                        <h3>
-                            Web Development
-                        </h3>
-
-
-                        <p>
-
-                            Responsive websites with clean structure,
-                            thoughtful layouts and smooth experiences
-                            across devices.
-
-                        </p>
-
+                        <div class="service-icon">◫</div>
+                        <h3>Full-Stack Web Apps</h3>
+                        <p>Complete web applications with frontend, backend, APIs and data persistence working together.</p>
                     </article>
 
-
-
-                    <!-- SERVICE 2 -->
-
                     <article class="service-card reveal">
-
-                        <div class="service-icon">
-                            ⌘
-                        </div>
-
-
-                        <h3>
-                            Frontend Development
-                        </h3>
-
-
-                        <p>
-
-                            Modern interfaces using HTML and CSS,
-                            with attention to usability, spacing
-                            and visual hierarchy.
-
-                        </p>
-
+                        <div class="service-icon">⌘</div>
+                        <h3>Frontend Development</h3>
+                        <p>Responsive interfaces using HTML, CSS and JavaScript with attention to usability and visual hierarchy.</p>
                     </article>
 
-
-
-                    <!-- SERVICE 3 -->
-
                     <article class="service-card reveal">
-
-                        <div class="service-icon">
-                            ⚙
-                        </div>
-
-
-                        <h3>
-                            Software Development
-                        </h3>
-
-
-                        <p>
-
-                            Practical applications and programming
-                            projects using Python, C# and Java.
-
-                        </p>
-
+                        <div class="service-icon">⚙</div>
+                        <h3>Backend & APIs</h3>
+                        <p>Python and FastAPI backends that expose application functionality through structured API endpoints.</p>
                     </article>
 
-
-
-                    <!-- SERVICE 4 -->
-
                     <article class="service-card reveal">
-
-                        <div class="service-icon">
-                            ↗
-                        </div>
-
-
-                        <h3>
-                            Backend & Logic
-                        </h3>
-
-
-                        <p>
-
-                            Application logic that processes data
-                            and turns requirements into useful
-                            functionality.
-
-                        </p>
-
+                        <div class="service-icon">◇</div>
+                        <h3>Database Integration</h3>
+                        <p>Application data stored and retrieved through a database layer instead of relying on static mock data.</p>
                     </article>
 
-
-
-                    <!-- SERVICE 5 -->
-
                     <article class="service-card reveal">
-
-                        <div class="service-icon">
-                            ◇
-                        </div>
-
-
-                        <h3>
-                            Problem Solving
-                        </h3>
-
-
-                        <p>
-
-                            Breaking complicated requirements into
-                            smaller, understandable pieces and
-                            implementing them systematically.
-
-                        </p>
-
+                        <div class="service-icon">↗</div>
+                        <h3>Deployment</h3>
+                        <p>Taking a project from local development to a publicly accessible deployment with GitHub and Render.</p>
                     </article>
 
-
-
-                    <!-- SERVICE 6 -->
-
                     <article class="service-card reveal">
-
-                        <div class="service-icon">
-                            +
-                        </div>
-
-
-                        <h3>
-                            Custom Projects
-                        </h3>
-
-
-                        <p>
-
-                            Defined idea or requirement?
-                            I can turn it into a working digital
-                            solution.
-
-                        </p>
-
+                        <div class="service-icon">+</div>
+                        <h3>Problem Solving</h3>
+                        <p>Breaking features into smaller pieces, debugging integration issues and turning requirements into working flows.</p>
                     </article>
-
-
                 </div>
-
             </div>
-
         </section>
 
-
-
-        <!-- ==================================================
-             PROJECTS
-        ================================================== -->
-
-        <section
-            class="section"
-            id="work"
-        >
-
+        <section class="section" id="work">
             <div class="container">
-
-
                 <div class="section-heading reveal">
-
-                    <div class="eyebrow">
-                        Selected work
-                    </div>
-
-
-                    <h2>
-                        Projects that show
-                        what I can do.
-                    </h2>
-
-
+                    <div class="eyebrow">Featured project</div>
+                    <h2>Pizza Fire — a real full-stack build.</h2>
                     <p>
-
-                        These are portfolio project slots.
-                        Replace them with your actual projects,
-                        screenshots and links.
-
+                        A complete, responsive pizza ordering platform built as a working application,
+                        not just a frontend mockup.
                     </p>
-
                 </div>
 
-
-
-                <div class="projects-grid">
-
-
-                    <!-- PROJECT 1 -->
-
-                    <article class="project-card reveal">
-
-
-                        <div class="project-preview">
-
-                            <div class="browser-window">
-
-
-                                <div class="browser-top">
-
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>
-
-
-                                <div class="fake-line"></div>
-
-
-                                <div class="fake-cards">
-
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-
-                                </div>
-
-
-                                <div class="fake-chart"></div>
-
-
+                <article class="project-card featured-project reveal">
+                    <div class="project-preview">
+                        <div class="browser-window project-browser">
+                            <div class="browser-top">
+                                <span></span><span></span><span></span>
                             </div>
 
+                            <div class="project-mini-header">
+                                <strong>Pizza Fire</strong>
+                                <small>ORDER MANAGEMENT</small>
+                            </div>
+
+                            <div class="mini-order">
+                                <div><span>Order #PF-1024</span><b>Preparing</b></div>
+                                <div class="mini-bar"><i></i></div>
+                            </div>
+
+                            <div class="mini-panels">
+                                <div>Customer<br><strong>My Orders</strong></div>
+                                <div>Admin<br><strong>Orders</strong></div>
+                                <div>Delivery<br><strong>Assigned</strong></div>
+                            </div>
+
+                            <div class="mini-api">
+                                <span>● API Connected</span>
+                                <span>FastAPI</span>
+                            </div>
                         </div>
-
-
-
-                        <div class="project-content">
-
-
-                            <div class="project-number">
-                                01 / WEB PROJECT
-                            </div>
-
-
-                            <h3>
-                                Modern Business Website
-                            </h3>
-
-
-                            <p>
-
-                                A responsive business website focused
-                                on clear information, strong visual
-                                hierarchy and a professional user
-                                experience.
-
-                            </p>
-
-
-                            <div class="tech-chips">
-
-                                <span>
-                                    HTML
-                                </span>
-
-                                <span>
-                                    CSS
-                                </span>
-
-                                <span>
-                                    Responsive
-                                </span>
-
-                                <span>
-                                    UI
-                                </span>
-
-                            </div>
-
-
-                            <a
-                                href="#contact"
-                                class="project-link"
-                            >
-                                Project case study →
-                            </a>
-
-
-                        </div>
-
-
-                    </article>
-
-
-
-                    <!-- PROJECT 2 -->
-
-                    <article class="project-card reveal">
-
-
-                        <div class="project-preview">
-
-                            <div class="browser-window">
-
-
-                                <div class="browser-top">
-
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>
-
-
-                                <div
-                                    class="fake-line"
-                                    style="width:55%"
-                                ></div>
-
-
-                                <div class="fake-cards">
-
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-
-                                </div>
-
-
-                                <div class="fake-chart"></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="project-content">
-
-
-                            <div class="project-number">
-                                02 / SOFTWARE PROJECT
-                            </div>
-
-
-                            <h3>
-                                Application / Management System
-                            </h3>
-
-
-                            <p>
-
-                                A practical software solution focused
-                                on structured data, application logic
-                                and simplifying a repetitive workflow.
-
-                            </p>
-
-
-                            <div class="tech-chips">
-
-                                <span>
-                                    Python
-                                </span>
-
-                                <span>
-                                    C#
-                                </span>
-
-                                <span>
-                                    Java
-                                </span>
-
-                                <span>
-                                    Logic
-                                </span>
-
-                            </div>
-
-
-                            <a
-                                href="#contact"
-                                class="project-link"
-                            >
-                                Project case study →
-                            </a>
-
-
-                        </div>
-
-
-                    </article>
-
-
-
-                    <!-- PROJECT 3 -->
-
-                    <article class="project-card reveal">
-
-
-                        <div class="project-preview">
-
-                            <div class="browser-window">
-
-
-                                <div class="browser-top">
-
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-
-                                </div>
-
-
-                                <div
-                                    class="fake-line"
-                                    style="width:32%"
-                                ></div>
-
-
-                                <div class="fake-cards">
-
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-
-                                </div>
-
-
-                                <div class="fake-chart"></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="project-content">
-
-
-                            <div class="project-number">
-                                03 / PERSONAL PROJECT
-                            </div>
-
-
-                            <h3>
-                                Interactive Web Experience
-                            </h3>
-
-
-                            <p>
-
-                                A frontend project focused on interaction,
-                                responsive layouts and translating an
-                                idea into a polished browser experience.
-
-                            </p>
-
-
-                            <div class="tech-chips">
-
-                                <span>
-                                    HTML
-                                </span>
-
-                                <span>
-                                    CSS
-                                </span>
-
-                                <span>
-                                    JavaScript*
-                                </span>
-
-                            </div>
-
-
-                            <a
-                                href="#contact"
-                                class="project-link"
-                            >
-                                Project case study →
-                            </a>
-
-
-                        </div>
-
-
-                    </article>
-
-
-                </div>
-
-
-                <p class="note">
-
-                    * Remove JavaScript if you don't use it yet.
-
-                </p>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ==================================================
-             PROCESS
-        ================================================== -->
-
-        <section
-            class="section"
-            id="process"
-        >
-
-            <div class="container">
-
-
-                <div class="section-heading reveal">
-
-                    <div class="eyebrow">
-                        My approach
                     </div>
 
+                    <div class="project-content">
+                        <div class="project-number">01 / FULL-STACK WEB APP</div>
+                        <h3>Pizza Fire</h3>
 
-                    <h2>
-                        Simple process.
-                        Clean execution.
-                    </h2>
+                        <p>
+                            A pizza ordering and order-management system with customer
+                            authentication, ordering, order history and tracking, plus
+                            separate admin and delivery workflows.
+                        </p>
 
+                        <div class="feature-grid">
+                            <div>
+                                <strong>Customer</strong>
+                                <span>Signup · Login · Orders · Tracking</span>
+                            </div>
+                            <div>
+                                <strong>Admin</strong>
+                                <span>Manage and update orders</span>
+                            </div>
+                            <div>
+                                <strong>Delivery</strong>
+                                <span>Handle assigned orders</span>
+                            </div>
+                            <div>
+                                <strong>Responsive</strong>
+                                <span>Desktop + mobile friendly</span>
+                            </div>
+                            <div>
+                                <strong>Backend</strong>
+                                <span>FastAPI · REST endpoints · SQLite</span>
+                            </div>
+                        </div>
+
+                        <div class="tech-chips">
+                            <span>Mobile Responsive</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>SQLite</span>
+                            <span>GitHub</span>
+                            <span>Render</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://pizza-fire-frontend.onrender.com" target="_blank" rel="noopener noreferrer" class="project-live">
+                                Live Demo ↗
+                            </a>
+                            <a href="https://github.com/Aditya-Vyas-11/Pizza-fire" target="_blank" rel="noopener noreferrer" class="project-link">
+                                GitHub Repository →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="process">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">My approach</div>
+                    <h2>Build the feature. Test the flow. Fix what breaks.</h2>
                 </div>
-
-
 
                 <div class="process-grid reveal">
-
-
                     <div class="process-step">
-
-                        <div class="step-number">
-                            01
-                        </div>
-
-
-                        <h3>
-                            Understand
-                        </h3>
-
-
-                        <p>
-
-                            Get clear on the goal,
-                            requirements and final product.
-
-                        </p>
-
+                        <div class="step-number">01</div>
+                        <h3>Understand</h3>
+                        <p>Define the users, requirements and actual workflow before writing code.</p>
                     </div>
 
-
-
                     <div class="process-step">
-
-                        <div class="step-number">
-                            02
-                        </div>
-
-
-                        <h3>
-                            Plan
-                        </h3>
-
-
-                        <p>
-
-                            Break the problem down and choose
-                            a sensible technical approach.
-
-                        </p>
-
+                        <div class="step-number">02</div>
+                        <h3>Structure</h3>
+                        <p>Separate frontend, backend, API and data responsibilities clearly.</p>
                     </div>
 
-
-
                     <div class="process-step">
-
-                        <div class="step-number">
-                            03
-                        </div>
-
-
-                        <h3>
-                            Build
-                        </h3>
-
-
-                        <p>
-
-                            Write the code, develop the interface
-                            and make it work.
-
-                        </p>
-
+                        <div class="step-number">03</div>
+                        <h3>Build</h3>
+                        <p>Implement the interface, application logic, API endpoints and database flow.</p>
                     </div>
 
-
-
                     <div class="process-step">
-
-                        <div class="step-number">
-                            04
-                        </div>
-
-
-                        <h3>
-                            Refine
-                        </h3>
-
-
-                        <p>
-
-                            Test, fix, improve responsiveness
-                            and clean up the final experience.
-
-                        </p>
-
+                        <div class="step-number">04</div>
+                        <h3>Deploy & Refine</h3>
+                        <p>Test the live application, debug integration issues and improve the final experience.</p>
                     </div>
-
-
                 </div>
-
             </div>
-
         </section>
 
-
-
-        <!-- ==================================================
-             SKILLS
-        ================================================== -->
-
-        <section
-            class="section"
-            id="skills"
-        >
-
+        <section class="section" id="skills">
             <div class="container">
-
-
                 <div class="section-heading reveal">
-
-                    <div class="eyebrow">
-                        Tech stack
-                    </div>
-
-
-                    <h2>
-                        Tools I work with.
-                    </h2>
-
+                    <div class="eyebrow">Tech stack</div>
+                    <h2>Tools I actually use.</h2>
                 </div>
-
-
 
                 <div class="skills-list reveal">
-
-
-                    <span>
-                        Python
-                    </span>
-
-
-                    <span>
-                        C#
-                    </span>
-
-
-                    <span>
-                        Java
-                    </span>
-
-
-                    <span>
-                        HTML
-                    </span>
-
-
-                    <span>
-                        CSS
-                    </span>
-
-
-                    <span>
-                        Git
-                    </span>
-
-
-                    <span>
-                        GitHub
-                    </span>
-
-
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>SQLite</span>
+                    <span>REST APIs</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Render</span>
                 </div>
-
             </div>
-
         </section>
 
-
-
-        <!-- ==================================================
-             ABOUT
-        ================================================== -->
-
-        <section
-            class="section"
-            id="about"
-        >
-
+        <section class="section" id="about">
             <div class="container about-grid">
-
-
                 <div class="section-heading reveal">
-
-                    <div class="eyebrow">
-                        About me
-                    </div>
-
-
-                    <h2>
-                        Developer mindset
-                        over buzzwords.
-                    </h2>
-
+                    <div class="eyebrow">About me</div>
+                    <h2>Less buzzwords. More working software.</h2>
                 </div>
-
-
 
                 <div class="about-content reveal">
-
-
                     <p>
-
-                        I'm
-                        <strong>
-                            Aditya Vyas
-                        </strong>,
-                        a web developer interested in building
-                        practical digital products and improving
-                        my development skills through real projects.
-
+                        I'm <strong>Aditya Vyas</strong>, a web developer focused on
+                        learning by building real projects and understanding how the
+                        pieces of a web application fit together.
                     </p>
 
-
                     <p>
-
-                        I work with
-                        <strong>
-                            Python, C#, Java, HTML and CSS
-                        </strong>,
-                        and I care about writing code that is
-                        understandable rather than unnecessarily
-                        complicated.
-
+                        I work with <strong>Python, FastAPI, JavaScript, HTML, CSS
+                        and SQLite</strong>, and I'm particularly interested in
+                        full-stack applications where the frontend actually talks
+                        to a backend and persists real data.
                     </p>
 
-
                     <p>
-
-                        This portfolio is built around one idea:
-
-                        <strong>
-                            show the work, explain the work,
-                            and let the work speak.
-                        </strong>
-
+                        <strong>Pizza Fire</strong> is a good example of that approach:
+                        customer authentication, ordering, order tracking, admin
+                        controls, delivery workflows, API integration and live deployment
+                        all in one project.
                     </p>
-
-
 
                     <div class="about-card">
-
-                        <h3>
-                            Currently building
-                        </h3>
-
-
+                        <h3>Currently building</h3>
                         <p>
-
-                            Real-world projects, stronger web
-                            development fundamentals and a portfolio
-                            based on actual work rather than
-                            inflated claims.
-
+                            Stronger full-stack fundamentals, better project architecture
+                            and a portfolio based on working software rather than inflated claims.
                         </p>
-
                     </div>
-
-
                 </div>
-
             </div>
-
         </section>
 
-
-
-        <!-- ==================================================
-             CONTACT
-        ================================================== -->
-
-        <section
-            class="section"
-            id="contact"
-        >
-
+        <section class="section" id="contact">
             <div class="container">
-
-
                 <div class="contact-box reveal">
-
-
                     <div>
-
-
-                        <div class="eyebrow">
-                            Contact
-                        </div>
-
-
-                        <h2>
-                            Let's build
-                            something useful.
-                        </h2>
-
-
+                        <div class="eyebrow">Contact</div>
+                        <h2>Have a project in mind?</h2>
                         <p>
-
-                            Have a website or software idea?
-                            Tell me what you're trying to build
-                            and we can start from there.
-
+                            Tell me what you're trying to build, and we can start
+                            from the actual requirement.
                         </p>
 
-
                         <div class="hero-buttons">
-
-
-                            <!-- GMAIL COMPOSE BUTTON -->
-
-                            <a
-                                href="https://mail.google.com/mail/?view=cm&fs=1&to=vyas.aditya2006@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary"
-                            >
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vyas.aditya2006@gmail.com"
+                               target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                                 Email me ↗
                             </a>
 
-
-                            <!-- LINKEDIN -->
-
-                            <a
-                                href="https://www.linkedin.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-secondary"
-                            >
-                                LinkedIn ↗
+                            <a href="https://github.com/Aditya-Vyas-11"
+                               target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                GitHub ↗
                             </a>
-
-
                         </div>
-
-
                     </div>
-
-
 
                     <div class="contact-details">
-
-
                         <div class="contact-item">
-
-                            <small>
-                                Name
-                            </small>
-
-                            <span>
-                                Aditya Vyas
-                            </span>
-
+                            <small>Name</small>
+                            <span>Aditya Vyas</span>
                         </div>
 
-
-
                         <div class="contact-item">
-
-                            <small>
-                                Email
-                            </small>
-
-
-                            <a
-                                href="https://mail.google.com/mail/?view=cm&fs=1&to=vyas.aditya2006@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-
-                                <span>
-                                    vyas.aditya2006@gmail.com
-                                </span>
-
+                            <small>Email</small>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vyas.aditya2006@gmail.com"
+                               target="_blank" rel="noopener noreferrer">
+                                <span>vyas.aditya2006@gmail.com</span>
                             </a>
-
-
                         </div>
-
-
 
                         <div class="contact-item">
-
-                            <small>
-                                Role
-                            </small>
-
-                            <span>
-                                Web Developer
-                            </span>
-
+                            <small>Role</small>
+                            <span>Web Developer</span>
                         </div>
-
-
 
                         <div class="contact-item">
-
-                            <small>
-                                Skills
-                            </small>
-
-                            <span>
-                                Python · C# · Java · HTML · CSS
-                            </span>
-
+                            <small>Focus</small>
+                            <span>Full-Stack Web Development</span>
                         </div>
-
-
 
                         <div class="contact-item">
-
-                            <small>
-                                Location
-                            </small>
-
-                            <span>
-                                India · Remote
-                            </span>
-
+                            <small>Location</small>
+                            <span>India · Remote</span>
                         </div>
-
-
                     </div>
-
-
                 </div>
-
             </div>
-
         </section>
-
-
     </main>
 
-
-
-    <!-- ==================================================
-         FOOTER
-    ================================================== -->
-
     <footer>
-
         <div class="container footer-content">
-
-
-            <span>
-
-                ©
-                <span id="year"></span>
-                Aditya Vyas.
-
-            </span>
-
-
-            <span>
-
-                Web Developer · Built with code.
-
-            </span>
-
-
+            <span>© <span id="year"></span> Aditya Vyas.</span>
+            <span>Web Developer · Built with code.</span>
         </div>
-
     </footer>
 
-
-
-    <!-- ==================================================
-         JAVASCRIPT
-    ================================================== -->
-
     <script src="script.js"></script>
-
-
 </body>
-
 </html>
-```
