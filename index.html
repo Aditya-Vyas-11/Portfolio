@@ -1,15 +1,179 @@
-<section class="section" id="work">
-    <div class="wrap">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aditya Vyas — Web Developer Portfolio">
+  <title>Aditya Vyas — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <div class="heading">
-            <div class="eyebrow">SELECTED WORK</div>
-            <h2>Projects I've built.</h2>
-            <p>
-                A selection of websites and web applications I've created.
-            </p>
-        </div>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#home">ADITYA<span>.</span></a>
 
-        <div id="projects" class="projects"></div>
+    <nav id="mainNav">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
+    <a class="nav-cta" href="#contact">Let's talk ↗</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><i></i> WEB DEVELOPER · INDIA</div>
+
+      <h1>I build <span>digital products</span><br>that solve real problems.</h1>
+
+      <p>
+        I'm Aditya Vyas, a web developer focused on clean interfaces,
+        functional web applications and practical full-stack solutions.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="#work">View my work ↗</a>
+        <a class="btn secondary" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="proof">
+        <span>●</span> Web Development · Full-Stack · Remote from India
+      </div>
     </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+      <div class="core">&lt;/&gt;</div>
+      <div class="floating one">Web Development</div>
+      <div class="floating two">Frontend + Backend</div>
+      <div class="floating three">Build · Test · Deploy</div>
+    </div>
+  </div>
 </section>
+
+<section class="metrics">
+  <div class="wrap metric-grid">
+    <div><strong>WEB</strong><span>Interfaces & applications</span></div>
+    <div><strong>FULL-STACK</strong><span>Frontend + backend integration</span></div>
+    <div><strong>API</strong><span>Real application workflows</span></div>
+    <div><strong>LIVE</strong><span>Projects deployed online</span></div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-heading">
+      <div class="eyebrow">SELECTED WORK</div>
+      <h2>Projects I've built.</h2>
+      <p>
+        A growing collection of websites and web applications.
+        New projects can be added from one simple list in <code>script.js</code>.
+      </p>
+    </div>
+
+    <div id="projects" class="projects"></div>
+  </div>
+</section>
+
+<section class="section muted" id="skills">
+  <div class="wrap">
+    <div class="section-heading">
+      <div class="eyebrow">SKILLS</div>
+      <h2>Tools I work with.</h2>
+    </div>
+
+    <div class="skill-grid">
+      <article><strong>Frontend</strong><span>HTML · CSS · JavaScript · Responsive UI</span></article>
+      <article><strong>Backend</strong><span>Python · FastAPI · REST APIs</span></article>
+      <article><strong>Data</strong><span>SQLite · CRUD · API integration</span></article>
+      <article><strong>Workflow</strong><span>Git · GitHub · Deployment</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="section-heading">
+      <div class="eyebrow">ABOUT</div>
+      <h2>Developer first.<br>Projects second.</h2>
+    </div>
+
+    <div class="about-copy">
+      <p>
+        I'm <b>Aditya Vyas</b>, a web developer who learns by building
+        and cares about understanding how a product works end to end.
+      </p>
+      <p>
+        My work can range from frontend interfaces to full-stack applications
+        with APIs, databases and deployment. I'm continuously expanding the
+        kinds of problems I can solve.
+      </p>
+      <p>
+        This portfolio is intentionally broader than any single project.
+        The projects are proof of what I can build — not my identity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="wrap contact-box">
+    <div>
+      <div class="eyebrow">CONTACT</div>
+      <h2>Have something to build?</h2>
+      <p>
+        Tell me what you're trying to make. We'll start with the actual requirement.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <div>
+        <small>EMAIL</small>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vyas.aditya2006@gmail.com"
+           target="_blank" rel="noopener noreferrer">
+          vyas.aditya2006@gmail.com ↗
+        </a>
+      </div>
+
+      <div>
+        <small>GITHUB</small>
+        <a href="https://github.com/Aditya-Vyas-11"
+           target="_blank" rel="noopener noreferrer">
+          github.com/Aditya-Vyas-11 ↗
+        </a>
+      </div>
+
+      <a class="btn primary email-btn"
+         href="https://mail.google.com/mail/?view=cm&fs=1&to=vyas.aditya2006@gmail.com"
+         target="_blank" rel="noopener noreferrer">
+        Email me ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Aditya Vyas.</span>
+    <span>Web Developer · Built with code.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
